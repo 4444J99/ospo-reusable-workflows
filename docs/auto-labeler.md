@@ -3,14 +3,14 @@
 ## Inputs
 
 ```yaml
-- uses: github/ospo-reusable-workflows/.github/workflows/auto-labeler.yml@main
+- uses: github/ospo-reusable-workflows/.github/workflows/auto-labeler.yaml@main
   permissions:
     contents: read
     pull-requests: write
   with:
-    # The name of the configuration file to use, default is release-drafter.yml
+    # The name of the configuration file to use, default is release-drafter.yaml
     # from the release-drafter/release-drafter GitHub Action
-    config-name: release-drafter.yml
+    config-name: release-drafter.yaml
   secrets:
     # The GitHub token to use
     github-token: ${{ secrets.GITHUB_TOKEN }}
