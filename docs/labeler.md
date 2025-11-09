@@ -10,7 +10,7 @@
   with:
     # The name of the configuration file to use, default is labeler.yaml
     # from the actions/labeler GitHub Action
-    # Yaml file must end in .yaml
+    # Yaml file must end in .yml
     config-path: labeler.yaml
   secrets:
     # The GitHub token to use
