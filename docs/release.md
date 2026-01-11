@@ -3,16 +3,16 @@
 ## Inputs
 
 ```yaml
-- uses: github/ospo-reusable-workflows/.github/workflows/release.yml@main
+- uses: github/ospo-reusable-workflows/.github/workflows/release.yaml@main
   permissions:
     contents: write
     pull-requests: read
   with:
     # Boolean flag whether to publish the release, default is true
     publish: true
-    # The name of the configuration file to use, default is release-drafter.yml
+    # The name of the configuration file to use, default is release-drafter.yaml
     # from the release-drafter/release-drafter GitHub Action
-    release-config-name: release-drafter.yml
+    release-config-name: release-drafter.yaml
   secrets:
     # The GitHub token to use
     github-token: ${{ secrets.GITHUB_TOKEN }}
